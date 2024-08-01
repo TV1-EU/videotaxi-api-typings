@@ -1,6 +1,6 @@
 {
   "name": "@tv1-eu/videotaxi-api-typings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TV1-EU/videotaxi-api-typings.git"
+    "url": "git+https://github.com/TV1-EU/videotaxi-api-typings.git"
   },
   "publishConfig": {
     "access": "public",
