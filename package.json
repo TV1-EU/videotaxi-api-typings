@@ -1,10 +1,11 @@
 {
   "name": "@tv1-eu/videotaxi-api-typings",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "scripts": {
     "build": "tsc"
   },
+  "types": "dist/speech.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TV1-EU/videotaxi-api-typings.git"
