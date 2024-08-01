@@ -20,6 +20,6 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: "@octocat"
       - run: npm run build
-      - run: npm run publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
