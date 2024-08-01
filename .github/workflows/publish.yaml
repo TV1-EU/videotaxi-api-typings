@@ -19,8 +19,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           # Defaults to the user or organization that owns the workflow file
           scope: "@octocat"
-      - run: npm install -g pnpm
-      - run: pnpm build
-      - run: pnpm publish
+      - run: npm run build
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
