@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "publish": "pnpm publish"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
