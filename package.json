@@ -2,7 +2,6 @@
   "name": "@tv1-eu/videotaxi-api-typings",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "tsc"
   },
@@ -19,5 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "typescript": "^5.5.4"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
