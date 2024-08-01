@@ -9,10 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/TV1-EU/videotaxi-api-typings.git"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
-  },
   "keywords": [],
   "author": "",
   "license": "MIT",
