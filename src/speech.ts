@@ -2,6 +2,7 @@ export type TranscriptEvent = {
   kind: "transcript";
   payload: {
     id: string;
+    sentence_id: string;
     text: string;
     latency: number;
     speaker: string;
@@ -14,6 +15,7 @@ export type TranscriptEvent = {
 export type PartialEvent = {
   kind: "partial";
   payload: {
+    id: string;
     text: string;
     latency: number;
   };
@@ -23,6 +25,7 @@ export type TranslationEvent = {
   kind: "translation";
   payload: {
     id: string;
+    sentence_id: string;
     text: string;
     original: string;
     latency: number;
@@ -48,6 +51,22 @@ export type VoiceoverEvent = {
   };
 };
 
+export type VoiceEvent = {
+  kind: "voiceover";
+  payload: {
+    id: string;
+    sentence_id: string;
+    text: string;
+    latency: number;
+    speaker: string;
+    created_at: number;
+    audio: string; // base64 encoded audio
+    seq: number;
+    from_ms: number;
+    to_ms: number;
+  };
+};
+
 export type EndOfStreamEvent = {
   kind: "end_of_stream";
   payload: {
@@ -61,6 +80,7 @@ export interface WebSocketMessage {
     | PartialEvent
     | TranslationEvent
     | VoiceoverEvent
+    | VoiceEvent
     | EndOfStreamEvent
   >;
 }
