@@ -52,7 +52,7 @@ export type VoiceoverEvent = {
 };
 
 export type VoiceEvent = {
-  kind: "voiceover";
+  kind: "voice";
   payload: {
     id: string;
     sentence_id: string;
